@@ -11,14 +11,17 @@
     "@types/node": "^24.10.1",
     "@types/passport": "^1.0.17",
     "@types/passport-jwt": "^4.0.1",
+    "@types/swagger-ui-express": "^4.1.8",
     "prisma": "^6.19.0",
+    "swagger-autogen": "^2.23.7",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   },
   "scripts": {
     "tsc": "tsc",
     "dev": "tsx watch src/index.ts",
-    "start": "tsc && node ./dist/index.js"
+    "start": "tsc && node ./dist/index.js",
+    "swagger": "node ./swagger.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
@@ -30,7 +33,8 @@
     "jsonwebtoken": "^9.0.2",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.1"
   },
   "type": "module"
 }
